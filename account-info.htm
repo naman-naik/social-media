@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="PeoDis.css">
+   <title>PeoDiss Account Info</title>
+   <link rel="icon" href="app_icon.jpg" type="image/gif" sizes="16x16">
+ </head>
+ 
+ <body>
+  <div><img src="profile.jpg" width="20%" height="30%" style="border-radius:50%; margin:8% 2% 2% 4%"></div>
+  <p id="edit" style="color:red;font-size:20pxs;"></p>
+  <div style="margin:-21% 0% 0% 28%; border:1px solid lightblue;padding:14px;"><h3 > <i>Naman Naik</i></h3>
+    <h4>Bio ....</h4>
+    <h4> ....</h4>
+	<h4> ....</h4>
+	<input type="button" value="Edit Profile" onclick="editprofile()">
+  </div><hr>
+   <div >
+	   <p>No posts are available . .  .</p>
+   </div>
+  <div class="icon-bar">
+     <a href="home-page.htm"><img src="home_icon.jpg" alt="XX" width="8%" height="2%">
+	 </a>
+	 <a href="account-info.htm"><img src="account_icon.png" alt="XX" width="8%" height="2%">
+	 </a>
+	 <a href="notification-page.htm"><img src="notification-icon.jpg" alt="XX" width="8%" height="2%">
+	 </a>
+     <a href="add-page.htm"><img src="add_icon.jpg" alt="XX" width="8%" height="2%">
+	 </a>
+	 
+<script>
+ function editprofile() {
+    document.getElementById("edit").innerHTML="You can't make changes Due to some problem";
+ }
+</script>	 
+  </div>	
+ </body>
+ 
+</html>

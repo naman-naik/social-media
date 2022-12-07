@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="PeoDis.css">
+   <title>PeoDiss Uploding</title>
+   <link rel="icon" href="app_icon.jpg" type="image/gif" sizes="16x16">
+ </head>
+ 
+ <body>
+  <div class="add-page"> <h3>Create Your Post :</h3><hr>
+   <p id="pst" style="color:red;font-size:20px;"><img id="output" width="100%"></p><br><br>
+    <input type="text" placeholder="Write Your Thought ... " ><br><br> 
+    <input type="file" onchange="loadFile(event)">	<br><br>
+	<input type="button" value="Post" onclick="mypost()" >
+  </div>
+  <div class="icon-bar">
+     <a href="home-page.htm"><img src="home_icon.jpg" alt="XX" width="5%" height="2%">
+	 </a>
+	 <a href="account-info.htm"><img src="account_icon.png" alt="XX" width="5%" height="2%">
+	 </a>
+	 <a href="notification-page.htm"><img src="notification-icon.jpg" alt="XX" width="5%" height="2%">
+	 </a>
+     <a href="add-page.htm"><img src="add_icon.jpg" alt="XX" width="5%" height="2%">
+	 </a>
+	 
+  </div>
+ <script>
+    function mypost() {
+	   document.getElementById("pst").innerHTML="Sorry, Posting Feature is still under Development";
+	}
+	var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src)
+    }
+  };
+ </script>
+  
+ </body>
+ 
+</html>
